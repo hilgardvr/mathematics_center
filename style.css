@@ -66,7 +66,7 @@
 .hero .content h1 {
     color: var(--primary-color);
     font-size: 3rem;
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 .hero .content h3 {
@@ -89,29 +89,35 @@
     z-index: 1;
 }
 
-.primary {
+.secondary {
     color: var(--secondary-color)
 }
 
 .about {
-    height: 100vh;
 }
 
-/* .container {
+.about h2 {
+    margin-bottom: 40px;
+}
+
+.container {
     display: flex;
     justify-content: space-between;
-} */
+}
 
 .container .info-left {
-    float: left;
     width: 50%;
+    background: #444;
 }
 
 .container .info-left img {
-    max-width: 700px;
+    max-width: 350px;
     width: 100%;
     border-radius: 50%;
-    padding: 90px 50px;
+    padding: 90px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container span {
@@ -120,11 +126,76 @@
 
 .container .info-right {
     width: 50%;
-    padding: 90px 50px;
-    float: right;
+    padding: 90px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--secondary-color);
+    color: #fff;
 }
 
 .container .info-right h2 {
     padding: 20px 0px;
 }
 
+.testimonials {
+    background-image:
+    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+    url('images/people-316506_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 90px;
+}
+
+
+.testimonials h2 {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.testimonials .testimonial {
+    text-align: center;
+    margin: auto;
+    padding: 50px 50px;
+    border: 1px dotted #333;
+    line-height: 1.5rem;
+}
+
+.classes {
+    text-align: center;
+    padding: 90px 0px;
+}
+
+.classes .container {
+    padding: 20px;
+}
+
+.classes .container i {
+    color: var(--secondary-color);
+    padding: 20px;
+}
+
+.classes .class {
+    padding: 30px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact > h2 {
+    padding: 90px;
+}
+
+.contact .contact-left {
+    background: url('images/geometry-1023846_1920.jpg') no-repeat center center/cover;
+    min-height: 300px;
+    width: 50%;
+}
+
+.contact .contact-right {
+    width: 50%;
+}
+
+.contact .contact-right > * {
+    padding: 20px;
+}
