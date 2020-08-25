@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    line-height : 1.5rem;
     box-sizing: border-box;
 }
 
@@ -93,24 +92,28 @@
     color: var(--secondary-color)
 }
 
-.about {
+.dark {
+    color: var(--background-primary)
 }
 
 .about h2 {
     margin-bottom: 40px;
 }
 
-.container {
+.about .container {
     display: flex;
     justify-content: space-between;
+    height: 100vh;
 }
 
-.container .info-left {
+.about .container .info-left {
+    display: flex;
     width: 50%;
     background: #444;
+    align-items: center;
 }
 
-.container .info-left img {
+.about .container .info-left img {
     max-width: 350px;
     width: 100%;
     border-radius: 50%;
@@ -120,20 +123,23 @@
     margin-right: auto;
 }
 
-.container span {
+.about .container span {
     color: var(--secondary-color)
 }
 
-.container .info-right {
+.about .container .info-right {
     width: 50%;
     padding: 90px 20px;
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 2rem;
     background-color: var(--secondary-color);
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.container .info-right h2 {
+.about .container .info-right h2 {
     padding: 20px 0px;
 }
 
@@ -143,16 +149,18 @@
     url('images/people-316506_1280.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    padding-bottom: 90px;
+    height: 100vh;
 }
 
 
 .testimonials h2 {
     text-align: center;
-    padding-top: 90px;
+    padding: 90px;
 }
 
-.testimonials .testimonial {
+.testimonials .container {
+    display: flex;
+    flex-direction: row;
     text-align: center;
     margin: auto;
     padding: 50px 50px;
@@ -160,40 +168,68 @@
     line-height: 1.5rem;
 }
 
-.classes {
+#classes {
     text-align: center;
     padding: 90px 0px;
+    height: 100vh;
 }
 
-.classes .container {
+#classes .container {
     padding: 20px;
+    display: flex;
 }
 
-.classes .container i {
+#classes .container i {
     color: var(--secondary-color);
     padding: 20px;
 }
 
-.classes .class {
+#classes .container h3 {
+    padding-bottom: 20px;
+}
+
+#classes .class {
     padding: 30px;
+}
+
+#classes .class a {
+    text-decoration: none;
+    color: black;
+}
+
+#classes .class:hover {
+    background: #999;
 }
 
 .contact {
     text-align: center;
+    height: 100vh;
+}
+
+.contact .container {
+    height: 100%;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    display: flex;
 }
 
 .contact > h2 {
-    padding: 90px;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    background: #999;
 }
 
 .contact .contact-left {
     background: url('images/geometry-1023846_1920.jpg') no-repeat center center/cover;
-    min-height: 300px;
     width: 50%;
 }
 
 .contact .contact-right {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact .contact-right > * {
