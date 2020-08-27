@@ -13,7 +13,7 @@
 }
 
 .hero {
-    background: url('./images/learn-1996845_1920.jpg') no-repeat center center/cover;
+    background: url('../images/learn-1996845_1920.jpg') no-repeat center center/cover;
     height: 100vh;
 }
 
@@ -23,7 +23,6 @@
     justify-content: space-between;
     align-items: center;
     background: var(--background-primary);
-    height: 70px;
     position: fixed;
     width: 100%;
     color: var(--primary-color);
@@ -31,7 +30,7 @@
 }
 
 .hero .navbar .logo {
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .hero .navbar ul {
@@ -41,7 +40,7 @@
 
 .hero .navbar ul li {
     list-style: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
 }
 
 .hero .navbar ul li:hover {
@@ -145,7 +144,7 @@
 .testimonials {
     background-image:
     linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
-    url('images/people-316506_1280.jpg');
+    url('../images/people-316506_1280.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
@@ -224,7 +223,7 @@
 }
 
 .contact .contact-left {
-    background: url('images/geometry-1023846_1920.jpg') no-repeat center center/cover;
+    background: url('../images/geometry-1023846_1920.jpg') no-repeat center center/cover;
     width: 50%;
 }
 
