@@ -102,7 +102,6 @@
 
 .about .container {
     display: flex;
-    justify-content: space-between;
     height: 100vh;
 }
 
@@ -150,19 +149,21 @@
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 .testimonials h2 {
     text-align: center;
-    padding: 90px;
+    padding: 50px;
 }
 
 .testimonials .container {
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin: auto;
     padding: 50px 50px;
     border: 1px dotted #333;
     line-height: 1.5rem;
@@ -170,13 +171,16 @@
 
 #classes {
     text-align: center;
-    padding: 90px 0px;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #classes .container {
     padding: 20px;
     display: flex;
+    justify-content: center;
 }
 
 #classes .container i {
