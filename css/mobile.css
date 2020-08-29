@@ -4,12 +4,60 @@
         flex-wrap: wrap;
     }
 
-        
+    .hero .content h1 {
+        text-align: center;
+    }
+
+    .contact .contact-heading,
+    .about .container .info-right h2 {
+        padding-top: 120px;
+    }
+
+    .testimonials h2, 
+    #classes > h2 {
+        padding-bottom: 0px;
+    }
 }
 
 @media(max-width: 500px) {
+    .hero .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .hero .navbar ul {
         flex-direction: column;
+        display: none;
+    }
+
+    .about .container {
+        flex-direction: column;
+    }
+
+    .about .container .info-left, 
+    .about .container .info-right {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact .container {
+        flex-direction: column-reverse;
+    }
+
+    .contact .contact-right,
+    .contact .contact-left {
+        min-height: 50vh;
+        width: 100%;
+    }
+
+    .about .container .info-right h2,
+    .testimonials h2,
+    #classes > h2,
+    .contact-right .contact-heading {
+        padding: 20px;
+    }
+        
+    .about .container .info-right {
         text-align: center;
     }
 }
