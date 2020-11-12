@@ -180,6 +180,11 @@
     border: 1px dotted #333;
 }
 
+.testimonials .subscript p {
+    text-align: center;
+}
+
+
 #classes {
     text-align: center;
     min-height: 100vh;
